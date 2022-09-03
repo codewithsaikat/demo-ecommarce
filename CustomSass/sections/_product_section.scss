@@ -1,0 +1,14 @@
+#Product-gallery {
+    .product {
+        &:hover {
+            cursor: pointer;
+            & img {
+               position: relative;
+               opacity: 0.5;
+               transition: all 0.3s ease;
+            }
+
+        }
+    }
+
+}

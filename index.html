@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./main/css/style.css">
+    <title>DEMO+E-COMMERCE</title>
+</head>
+
+<body>
+
+    <main>
+        <!--TODO: MAIN > HEADER -->
+        <header>
+            <!-- todo: Top Info bar -->
+
+            <div class="text-light p-2 bg-purple-dark-20">
+                <div class="container-fluid row text-wrap">
+                    <!--todo: Support -->
+                    <div class="col col-xl-2 d-flex flex-row">
+                        <i class="bi bi-headset text-carrot-red pe-1"></i>
+                        <span class="text-muted me-1">Support</span>
+                        <a href="tel:00331254566151"
+                            class="text-muted hover-link text-decoration-none">(00)331254566151</a>
+                    </div>
+                    <!--todo: Info carousel -->
+                    <div id="info-top-carousel" class="col col-xl-6 col-md-8 carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-carrot-red">
+                            <div class="carousel-item">
+                                <span>Get instant and lifetime access to you course!</span>
+                            </div>
+                            <div class="carousel-item active">
+                                <span>Money back within 30 days.</span>
+                            </div>
+                            <div class="carousel-item">
+                                <span>Friendly 24/7 customer support.</span>
+                            </div>
+                            <div class="carousel-item">
+                                <span>We possess SSL / Secure сertificate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--todo: Language & currency -->
+
+                    <div class="col col-xl-4 col-md-3 col-sm-12 text-end align-items-center">
+                        <div class="btn-group dropdown disable-autohide">
+                            <button class="btn btn-sm dropdown-toggle px-2 text-light" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-flag-fill me-2"></i> Eng / $
+                            </button>
+                            <ul class="dropdown-menu my-1">
+                                <li class="dropdown-item">
+                                    <select class="form-select form-select-sm">
+                                        <option value="usd">$ USD</option>
+                                        <option value="eur">€ EUR</option>
+                                        <option value="ukp">£ UKP</option>
+                                        <option value="jpy">¥ JPY</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- todo: Cart btn -->
+
+                        <a href="#" class="position-relative p-1" data-bs-toggle="offcanvas" data-bs-target="#Cart"
+                            aria-controls="Cart">
+                            <i class="bi bi-cart bg-light text-dark rounded-circle p-1">
+                            </i>
+                            <span class="badge position-absolute top-0
+                             start-100  translate-middle rounded-pill  bg-danger 
+                              ">+2</span>
+                        </a>
+
+                        <!--todo:  Cart Content -->
+
+                        <div id="Cart" class="offcanvas offcanvas-end">
+                            <div class="offcanvas-header bg-purple-dark">
+                                <h5 class="text-light">CART</h5>
+                                <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <!-- card body -->
+                            <div class="offcanvas-body">
+                                <!-- card body > check out -->
+                                <div class="row mb-5">
+                                    <div class="col mb-3">
+                                        <div class="
+                                              d-flex
+                                               mb-3
+                                            text-purple-dark
+                                           justify-content-between
+                                                                  ">
+                                            <h4>Subtotal</h4>
+                                            <h4>$ 41.98</h4>
+                                        </div>
+                                        <form>
+                                            <div class="d-flex justify-content-between">
+                                                <input type="text" class="form-controle" placeholder="Promo code "
+                                                    required="">
+                                                <button type="submit" class="btn btn-outline-danger">
+                                                    Apply promo code
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <button class="btn btn-danger m-auto shadow w-100">
+                                        <i class="bi bi-credit-card me-2"> </i>Proceed to checkout
+                                    </button>
+                                </div>
+                                <!-- todo: cart items -->
+                                <div class="row">
+                                    <!-- todo: cart item-1 -->
+                                    <div class="card border-0 mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="../img/30 Day of Projects Logo-V3.jpg" alt=""
+                                                    class="img-fluid rounded-start">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body text-purple-dark pt-sm-0">
+                                                    <h6 class="card-title">
+                                                        30 HTML5 CSS3 &amp; JavaScript Projects
+                                                    </h6>
+                                                    <div class="row">
+                                                        <p class="col-4 text-primary">$15.99</p>
+                                                        <input type="number" class="col-4 h-50" placeholder="1" min="0">
+                                                        <a href="#" class="col-4 text-danger" data-bs-toggle="tooltip"
+                                                            data-bs-title="Remove" data-bs-placement="top">
+                                                            <i class="bi bi-x-circle m-auto"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- todo: cart item-2 -->
+                                    <div class="card border-0 mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="../img/Modern JavaScript and NodeJS Course.jpg"
+                                                    class="img-fluid rounded-start" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body text-purple-dark pt-sm-0">
+                                                    <h6 class="card-title">
+                                                        Modern JavaScript and NodeJS
+                                                    </h6>
+                                                    <div class="row">
+                                                        <p class="col-4 text-primary">$25.99</p>
+
+                                                        <input type="number" class="col-4 h-50" placeholder="1" min="0">
+                                                        <a href="#" class="col-4 text-danger" data-bs-toggle="tooltip"
+                                                            data-bs-title="Remove" data-bs-placement="top"><i
+                                                                class="bi bi-x-circle"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- todo: Navigation  -->
+
+            <nav class="
+            navbar navbar-expand-lg navbar-dark
+            bg-purple-dark
+            navbar-sticky
+          ">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="./img/logo/ecommerce.png" alt="logo" class="d-line-block aling-text-top"
+                            style="height: 24px">
+                        E-commerce
+                    </a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navigation"
+                        aria-controls="Navigation" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="Navigation">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Course</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#Product-gallery" class="dropdown-item">Front-End</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Product-gallery" class="dropdown-item">Back-End</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a href="#Product-gallery" class="dropdown-item">Full Stack</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Collaborate" class="nav-link">Collaborate</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#Contact" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Header-carousel -->
+
+            <section id="Header-carousel">
+                <div id="headerCarousel" class="carousel slide shadow w-75 m-lg-auto m-auto mt-5"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-target="#headerCarousel" data-bs-slide-to="0"
+                            aria-current="true"></button>
+                        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1" class=""></button>
+                        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2" class=""></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Carousel item-1 -->
+                        <div class="carousel-item active">
+                            <img src="./headerCarousel/pexels-andrea-piacquadio-3775128.jpg" alt="img-1"
+                                class="d-block w-100 h-50">
+                            <div class="
+                    carousel-caption
+                    d-none d-md-block
+                    fade-in-left
+                    mb-5
+                    bg-dark-transparent
+                  ">
+                                <h5 class="display-3">Learn from everywhere</h5>
+                                <p>
+                                    Some representative placeholder content for the first slide.
+                                </p>
+                                <a href="#Product-gallery" class="btn btn-danger btn-lg">Courses <i
+                                        class="bi bi-caret-right-fill ms-2 shadow"></i></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./headerCarousel/pexels-andrea-piacquadio-3775168.jpg" class="d-block w-100 h-50"
+                                alt="...">
+                            <div class="
+                    carousel-caption
+                    d-none d-md-block
+                    fade-in-left
+                    mb-5
+                    bg-dark-transparent
+                  ">
+                                <h5 class="display-3">Mobil access</h5>
+                                <p>
+                                    Some representative placeholder content for the second
+                                    slide.
+                                </p>
+                                <a href="#Product-gallery" class="btn btn-danger btn-lg">
+                                    Courses<i class="bi bi-caret-right-fill ms-2 shadow"></i></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./headerCarousel/pexels-mentatdgt-1569076.jpg" class="d-block w-100 h-50"
+                                alt="...">
+                            <div class="
+                    carousel-caption
+                    d-none d-md-block
+                    fade-in-left
+                    mb-5
+                    bg-dark-transparent
+                  ">
+                                <h5 class="display-3">Lifetime access</h5>
+                                <p>
+                                    Some representative placeholder content for the third slide.
+                                </p>
+                                <a href="#Product-gallery" class="btn btn-danger btn-lg">
+                                    Courses<i class="bi bi-caret-right-fill ms-2 shadow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Next & Prev Btn -->
+                    <button class="carousel-control-prev" data-bs-target="#headerCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#headerCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <!--TODO: MAIN > SEC. CATEGORIES -->
+        <section id="Categories" class="container py-5">
+            <h4 class="display-4 fw-bold text-purple-dark my-5 pb-2">
+                Top categories &amp; technologies
+            </h4>
+            <h6 class="display-6 text-purple-dark mb-3">
+                Web development / Front-End / Back-End / Full Stack
+            </h6>
+            <p class="fs-4 mb-5">Choose from the hottest industry requirements</p>
+            <!-- Technology container -->
+
+            <div class="container px-0">
+                <div class="row row-cols-1 row-cols-md-2 mt-5 justify-content-around">
+                    <div class="col category display-1 row"   data-bs-toggle="popover" data-bs-trigger=" hover" title=""
+                         data-bs-content="Front-End Frameworks" data-bs-title="Web development">
+                        <i class="fab fa-angular text-angular col-6" data-bs-toggle="tooltip" title=""
+                            data-bs-title="Angular">
+                        </i><i class="fab fa-vuejs text-vue col-6" data-bs-toggle="tooltip" title=""
+                            data-bs-title="VueJS" aria-label="VueJS"></i><i class="fab fa-react text-react col-auto"
+                            data-bs-toggle="tooltip" title="" data-bs-title="React" aria-label="React"></i>
+                    </div>
+                    <div class="col category display-2 row" data-bs-toggle="popover" data-bs-trigger=" hover" title=""
+                        data-bs-content="HTML, CSS, JavaScript, Sass/Scss, CSS-Framework"
+                        data-bs-title="Frontend languages">
+                        <i class="fab fa-html5 text-html col-4" data-bs-toggle="tooltip" title=""
+                            data-bs-title="HTML" aria-label="HTML"></i><i
+                            class="fab fa-css3-alt text-css col-4" data-bs-toggle="tooltip" title=""
+                            data-bs-title="CSS" aria-label="CSS"></i><i class="fab fa-js text-js col-4"
+                            data-bs-toggle="tooltip" title="" data-bs-title="JavaScript"
+                            aria-label="JavaScript"></i><i class="fab fa-sass text-sass col-4" data-bs-toggle="tooltip"
+                            title="" data-bs-title="Sass" aria-label="Sass"></i>
+                        <i class="fab fa-bootstrap text-bs col-4" data-bs-toggle="tooltip" title=""
+                            data-bs-title="Bootstrap" aria-label="Bootstrap"></i>
+                    </div>
+                    <div class="col category display-1 row" data-bs-toggle="popover" data-bs-trigger=" hover" title=""
+                        data-bs-content="npm, NodeJS, Express, MongoDB, Sql"
+                        data-bs-title="Backend languages &amp; technologies">
+                        <i class="fab fa-npm text-npm col-6" data-bs-toggle="tooltip" title=""
+                            data-bs-title="mpn" aria-label="mpn"></i><i class="fab fa-node text-node col-6"
+                            data-bs-toggle="tooltip" title="" data-bs-title="NodeJS" aria-label="NodeJS"></i><i
+                            class="fas fa-database text-db col-auto" data-bs-toggle="tooltip" title=""
+                            data-bs-title="Data base" aria-label="Data base"></i>
+                    </div>
+                    <div class="col category display-4 row" data-bs-toggle="popover" data-bs-trigger=" hover" title=""
+                        data-bs-content="MongoDB - document database 
+              Express(.js) - Node.js web framework
+              React(.js) - a client-side JavaScript framework 
+              Node(.js) - the premier JavaScript web server" data-bs-title="Fullstack">
+                        <div class="col">
+                            <h4 class="text-center mb-3">MERN</h4>
+                            <div class="row border-1">
+                                <i class="fas fa-database text-db col-6" data-bs-toggle="tooltip" title=""
+                                    data-bs-title="MongoDB" aria-label="MongoDB"></i>
+                                <div class="fs-6 col-6 text-primary">ExpressJS</div>
+                                <i class="fab fa-react text-react col-6" data-bs-toggle="tooltip" title=""
+                                    data-bs-title="React" aria-label="React"></i><i
+                                    class="fab fa-node text-node col-6" data-bs-toggle="tooltip" title=""
+                                    data-bs-title="NodeJS" aria-label="NodeJS"></i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="text-center mb-3">MEAN</h4>
+                            <div class="row">
+                                <i class="fas fa-database text-db col-6" data-bs-toggle="tooltip" title=""
+                                    data-bs-title="MongoDB" aria-label="MongoDB"></i>
+                                <div class="fs-6 col-6 text-primary">ExpressJS</div>
+                                <i class="fab fa-angular text-angular col-6" data-bs-toggle="tooltip" title=""
+                                    data-bs-title="Angular" aria-label="Angular"></i><i
+                                    class="fab fa-node text-node col-6" data-bs-toggle="tooltip" title=""
+                                    data-bs-title="NodeJS" aria-label="NodeJS"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--TODO: MAIN > SEC. PRODUCT GALLERY -->
+        <section id="Product-gallery" class="container py-5">
+            <h4 class="display-4 fw-bold text-purple-dark my-5 pb-2">Course</h4>
+
+            <h6 class="display-6 text-purple-dark mb-3">
+                Web development / Frameworks / JavaScript / Design
+            </h6>
+            <p class="fs-4 mb-5">
+                Choose from over 100,000 online video courses with new additions
+                published every month
+            </p>
+            <!-- todo: product container -->
+            <div class="container px-0">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                    <!-- todo: Product -1  -->
+                    <div class="col product" data-bs-toggle="offcanvas" data-bs-target="#course-1"
+                        aria-controls="course-1">
+                         <img src="./img/Web Dev HTML CSS JS SASS.jpg"
+                            alt="  Web Development HTML CSS &amp; JS Beginner to Advance" class="card-img-top">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">
+                                Web Development HTML CSS &amp; JS Beginner to Advance
+                            </h4>
+                            <p class="cart-text text-muted">Web development/Front-End</p>
+                            <span class="d-flex">
+                                <h5 class="fw-bold text-carrot-red me-2">4.8</h5>
+                                <span class="h6 text-review-color me-2"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                                <p class="text-muted h6">(2155)</p>
+                            </span>
+                            <span class="d-flex">
+                                <h5 class="fw-bold me-2">15.99</h5>
+                                <p class="text-muted text-decoration-line-through">99.99</p>
+                            </span>
+                            <span class="badge bg-warning text-dark">Bestseller</span>
+                        </div>
+                    </div>
+                    <!-- todo: Product -1 Content  -->
+                    <div class="offcanvas offcanvas-end shadow" id="course-1" data-bs-scroll="true"
+                        data-bs-backdrop="false">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title fw-bold w-75">
+                                Web Development HTML CSS &amp; JS Beginner to Advance
+                            </h4>
+                            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <span class="d-flex justify-content-between">
+                                <span class="badge bg-warning text-dark">Bestseller</span>
+                                <span class="text-success"> Updated <b>July 2021</b></span>
+                            </span>
+                            <span class="d-flex justify-content-between mt-2 text-muted">
+                                <p>25 total hours</p>
+                                <p>All levels</p>
+                            </span>
+                            <span class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-danger btn-lg w-100">
+                                    Add to cart
+                                </button>
+                                <i class="bi bi-cart-check text-danger display-6 ms-3"></i>
+                            </span>
+                            <h5 class="mt-3">What you`ll learn:</h5>
+                            <ul class="list-unstyled m-3">
+                                <li class="mt-3">
+                                    <i class="bi bi-check-lg text-success me-2"></i>HTML5
+                                    Boilerplate, Semantic Layout and essential Tags
+                                </li>
+                                <li class="mt-2">
+                                    <i class="bi bi-check-lg text-success me-2"></i> CSS3
+                                    Variables, Transitions, Dropdowns, Overlays &amp; More
+                                </li>
+                                <li class="mt-2">
+                                    <i class="bi bi-check-lg text-success me-2"></i> Flexbox &amp;
+                                    CSS Grid Projects
+                                </li>
+                                <li class="mt-2">
+                                    <i class="bi bi-check-lg text-success me-2"></i> JavaScript
+                                    basics, DOM manipulation, ES6
+                                </li>
+                            </ul>
+                            <h5 class="mt-4">Course content</h5>
+                            <p class="text-muted">
+                                18 sections • 132 lectures • 25h 0m total length
+                            </p>
+
+                            <ul class="list-group m-3">
+                                <!-- todo:Intro list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#intro" type="button" aria-expanded="false"
+                                    aria-controls="intro">
+                                    <p class="fw-bold">Introduction</p>
+                                    <span class="badge bg-primary">2 lecture • 12:50 min</span>
+                                </li>
+                                <!--todo: Intro list items-->
+                                <div class="collapsing" id="intro">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Introduction</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">Setting up the environment</a>
+
+                                        <div class="col-2">07:30</div>
+                                    </div>
+                                </div>
+                                <!-- todo: HTML 5 list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#html" type="button" aria-expanded="false" aria-controls="html">
+                                    <p class="fw-bold">HTML 5</p>
+                                    <span class="badge bg-primary">8 lectures • 1 h</span>
+                                </li>
+                                <!--todo: HTML 5 list items-->
+                                <div class="collapsing" id="html">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Section overview</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">What is HTML 5?</a>
+
+                                        <div class="col-2">04:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML 5 Boilerplate</a>
+
+                                        <div class="col-2">02:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Headings</a>
+
+                                        <div class="col-2">03:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Paragraph</a>
+
+                                        <div class="col-2">05:16</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Anchor</a>
+
+                                        <div class="col-2">09:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Lists</a>
+
+                                        <div class="col-2">12:30</div>
+                                    </div>
+                                </div>
+                                <!-- todo: CSS 3 list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#CSS" type="button" aria-expanded="false" aria-controls="CSS">
+                                    <p class="fw-bold">CSS 3</p>
+                                    <span class="badge bg-primary">12 lectures • 1h 34min</span>
+                                </li>
+                                <!--todo: CSS 3 list items-->
+                                <div class="collapsing" id="CSS">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Section overview</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">Element Attributes</a>
+
+                                        <div class="col-2">04:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS 5 dib</a>
+
+                                        <div class="col-2">02:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Headings</a>
+
+                                        <div class="col-2">03:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Paragraph</a>
+
+                                        <div class="col-2">05:16</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Anchor</a>
+
+                                        <div class="col-2">09:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Lists</a>
+
+                                        <div class="col-2">12:30</div>
+                                    </div>
+                                </div>
+                                <!-- todo: CSS 3 - Flexbox list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#Flexbox" type="button" aria-expanded="false"
+                                    aria-controls="Flexbox">
+                                    <p class="fw-bold">CSS 3 Flexbox</p>
+                                    <span class="badge bg-primary">12 lectures • 2h 24min</span>
+                                </li>
+                                <!--todo: CSS 3 Flexbox  list items-->
+                                <div class="collapsing" id="Flexbox">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Section overview</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">Element Attributes</a>
+
+                                        <div class="col-2">04:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">02:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">03:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">05:16</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">09:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">12:30</div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- todo: Product - 2 -->
+
+                    <div class="col product" data-bs-toggle="offcanvas" data-bs-target="#course-2"
+                        aria-controls="course-2">
+                        <img src="./img/Modern JavaScript and NodeJS Course.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">Modern JavaScript and NodeJS</h4>
+                            <p class="card-text text-muted">Web development/Fullstack</p>
+                            <span class="d-flex">
+                                <h5 class="fw-bold text-carrot-red me-2">4.3</h5>
+                                <span class="h6 text-review-cold me-2"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i>
+                                </span>
+
+                                <p class="text-muted h6">(1501)</p>
+                            </span>
+                            <span class="d-flex">
+                                <h5 class="fw-bold me-2">$25.99</h5>
+                                <p class="text-muted text-decoration-line-through">
+                                    $99.99
+                                </p>
+                            </span>
+
+                            <span class="badge bg-success">New</span>
+                        </div>
+                    </div>
+                    <!--todo: Product - 2 Content  -->
+                    <div class="offcanvas offcanvas-end shadow" data-bs-scroll="true" data-bs-backdrop="false"
+                        id="course-2">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title fw-bold w-75">
+                                Modern JavaScript and NodeJS
+                            </h4>
+                            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <span class="d-flex justify-content-between">
+                                <span class="badge bg-success">New</span>
+                                <span class="text-success">
+                                    Updated <b>August 2021</b>
+                                </span></span>
+                            <span class="d-flex justify-content-between mt-2 text-muted">
+                                <p>25 total hours</p>
+                                <p>All levels</p>
+                            </span>
+
+                            <span class="d-flex justify-content-between mt-2">
+                                <button class="btn btn-danger btn-lg w-100">
+                                    Add to cart
+                                </button>
+                                <i class="bi bi-cart-check text-danger display-6 ms-3"></i></span>
+                            <h5 class="mt-3">What you'll learn:</h5>
+                            <ul class="list-unstyled m-3">
+                                <li class="mt-3">
+                                    <i class="bi bi-check-lg text-success me-2"></i> Learn
+                                    everything there is to know about Javascript - from scratch!
+                                </li>
+                                <li class="mt-2">
+                                    <i class="bi bi-check-lg text-success me-2"></i>JavaScript
+                                    Basics &amp; Fundamentals
+                                </li>
+                                <li class="mt-2">
+                                    <i class="bi bi-check-lg text-success me-2"></i> OOP ES5
+                                    prototypes &amp; ES6 / ES2015 classes
+                                </li>
+                                <li class="mt-2">
+                                    <i class="bi bi-check-lg text-success me-2"></i> JavaScript
+                                    basics, DOM manipulation, ES6
+                                </li>
+                            </ul>
+                            <!-- todo: Course content -->
+                            <h5 class="mt-4">Course content</h5>
+                            <p class="text-muted">
+                                18 sections • 132 lectures • 25h 0m total length
+                            </p>
+
+                            <ul class="list-group m-3">
+                                <!-- todo:Intro list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#intro" type="button" aria-expanded="false"
+                                    aria-controls="intro">
+                                    <p class="fw-bold">Introduction</p>
+                                    <span class="badge bg-primary">2 lecture • 12:50 min</span>
+                                </li>
+                                <!--todo: Intro list items-->
+                                <div class="collapsing" id="intro">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Introduction</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">Setting up the environment</a>
+
+                                        <div class="col-2">07:30</div>
+                                    </div>
+                                </div>
+                                <!-- todo: JavaScript Fundamentals list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#fundamentals" type="button" aria-expanded="false"
+                                    aria-controls="fundamentals">
+                                    <p class="fw-bold">JavaScript Fundamentals</p>
+                                    <span class="badge bg-primary">8 lectures • 1 h</span>
+                                </li>
+                                <!--todo: JavaScript Fundamentals list items-->
+                                <div class="collapsing" id="fundamentals">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Section overview</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">What is HTML 5?</a>
+
+                                        <div class="col-2">04:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML 5 Boilerplate</a>
+
+                                        <div class="col-2">02:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Headings</a>
+
+                                        <div class="col-2">03:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Paragraph</a>
+
+                                        <div class="col-2">05:16</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Anchor</a>
+
+                                        <div class="col-2">09:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">HTML Lists</a>
+
+                                        <div class="col-2">12:30</div>
+                                    </div>
+                                </div>
+                                <!-- todo: CSS 3 list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#CSS" type="button" aria-expanded="false" aria-controls="CSS">
+                                    <p class="fw-bold">CSS 3</p>
+                                    <span class="badge bg-primary">12 lectures • 1h 34min</span>
+                                </li>
+                                <!--todo: CSS 3 list items-->
+                                <div class="collapsing" id="CSS">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Section overview</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">Element Attributes</a>
+
+                                        <div class="col-2">04:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS 5 dib</a>
+
+                                        <div class="col-2">02:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS elements</a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Headings</a>
+
+                                        <div class="col-2">03:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Paragraph</a>
+
+                                        <div class="col-2">05:16</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Anchor</a>
+
+                                        <div class="col-2">09:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Lists</a>
+
+                                        <div class="col-2">12:30</div>
+                                    </div>
+                                </div>
+                                <!-- todo: CSS 3 - Flexbox list-->
+                                <li class="
+                      list-group-item
+                      list-group-item-action
+                      list-group-item-light
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    " data-bs-toggle="collapse" href="#Flexbox" type="button" aria-expanded="false"
+                                    aria-controls="Flexbox">
+                                    <p class="fw-bold">CSS 3 Flexbox</p>
+                                    <span class="badge bg-primary">12 lectures • 2h 24min</span>
+                                </li>
+                                <!--todo: CSS 3 Flexbox  list items-->
+                                <div class="collapsing" id="Flexbox">
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-success"></i>
+
+                                        <a class="col-7">Section overview</a>
+                                        <a class="col-2 text-decoration-underline">Preview</a>
+                                        <div class="col-2">05:20</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">Element Attributes</a>
+
+                                        <div class="col-2">04:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">02:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">15:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">03:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">05:16</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">09:30</div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <i class="col-1 bi bi-play-circle-fill text-danger"></i>
+
+                                        <a class="col-9">CSS Flexbox </a>
+
+                                        <div class="col-2">12:30</div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- todo: Product - 3 -->
+
+                    <div class="col product" data-bs-toggle="offcanvas" data-bs-target="#course-2"
+                        aria-controls="course-2">
+                        <img src="./img/UI UX Desing Course.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">
+                                UI &amp; UX using Figma Beginner to Advance
+                            </h4>
+                            <p class="card-text text-muted">Design</p>
+                            <span class="d-flex">
+                                <h5 class="fw-bold text-carrot-red me-2">4.8</h5>
+                                <span class="h6 text-review-cold me-2"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                </span>
+
+                                <p class="text-muted h6">(1501)</p>
+                            </span>
+                            <span class="d-flex">
+                                <h5 class="fw-bold me-2">$15.99</h5>
+                                <p class="text-muted text-decoration-line-through">
+                                    $99.99
+                                </p>
+                            </span>
+
+                            <span class="badge bg-success">New</span>
+                        </div>
+                    </div>
+                    <!--todo: Product - 3 Content  -->
+
+                    <div class="col product" data-bs-toggle="offcanvas" data-bs-target="#course-2"
+                        aria-controls="course-2">
+                        <img src="./img/Visual Studio Code Course.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">Master Visual Studio Code</h4>
+                            <p class="card-text text-muted">Web development</p>
+                            <span class="d-flex">
+                                <h5 class="fw-bold text-carrot-red me-2">2.5</h5>
+                                <span class="h6 text-review-cold me-2"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
+                                        class="far fa-star"></i><i class="far fa-star"></i>
+                                </span>
+
+                                <p class="text-muted h6">(1501)</p>
+                            </span>
+                            <span class="d-flex">
+                                <h5 class="fw-bold me-2">$10.99</h5>
+                                <p class="text-muted text-decoration-line-through">
+                                    $99.99
+                                </p>
+                            </span>
+
+                            <span class="badge bg-success">New</span>
+                        </div>
+                    </div>
+                    <div class="col product" data-bs-toggle="offcanvas" data-bs-target="#course-2"
+                        aria-controls="course-2">
+                        <img src="./img/Bootstrap 5 Logo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">Bootstrap 5</h4>
+                            <p class="card-text text-muted">Web development</p>
+                            <span class="d-flex">
+                                <h5 class="fw-bold text-carrot-red me-2">4.8</h5>
+                                <span class="h6 text-review-cold me-2"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                </span>
+
+                                <p class="text-muted h6">(1501)</p>
+                            </span>
+                            <span class="d-flex">
+                                <h5 class="fw-bold me-2">$15.99</h5>
+                                <p class="text-muted text-decoration-line-through">
+                                    $99.99
+                                </p>
+                            </span>
+
+                            <span class="badge bg-danger">Hot &amp; New</span>
+                        </div>
+                    </div>
+                    <div class="col product" data-bs-toggle="offcanvas" data-bs-target="#course-2"
+                        aria-controls="course-2">
+                        <img src="../img/30 Day of Projects Logo-V3.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">
+                                30 HTML5 CSS3 &amp; JavaScript Projects
+                            </h4>
+                            <p class="card-text text-muted">Web development</p>
+                            <span class="d-flex">
+                                <h5 class="fw-bold text-carrot-red me-2">4.8</h5>
+                                <span class="h6 text-review-cold me-2"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                </span>
+
+                                <p class="text-muted h6">(1501)</p>
+                            </span>
+                            <span class="d-flex">
+                                <h5 class="fw-bold me-2">$15.99</h5>
+                                <p class="text-muted text-decoration-line-through">
+                                    $99.99
+                                </p>
+                            </span>
+
+                            <span class="badge bg-success">New</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--TODO: MAIN > SEC. REVIEWS -->
+
+        <section id="Reviews" class="bg-light py-5 mb-5">
+            <div class="container">
+                <h4 class="display-4 fw-bold text-purple-dark my-5 pb-2">
+                    Customer reviews
+                </h4>
+                <h6 class="display-6 text-purple-dark mb-5">Your opinion counts!</h6>
+
+                <section id="Review-cards" class="row row-cols-4 g-5">
+                    <!-- todo: Review card-1  -->
+                    <div class="review-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                                ex quos voluptate similique consequuntur aperiam voluptas et
+                                reprehenderit, nihil vero? Necessitatibus quisquam
+                                perspiciatis aliquid quia! Fugiat totam necessitatibus aperiam
+                                modi?
+                            </p>
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-center">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&amp;topType=Turban&amp;accessoriesType=Sunglasses&amp;hatColor=Blue03&amp;facialHairType=BeardMajestic&amp;facialHairColor=Blonde&amp;clotheType=BlazerSweater&amp;eyeType=Hearts&amp;eyebrowType=UpDown&amp;mouthType=Concerned&amp;skinColor=Light"
+                                alt="" class="rounded-circle">
+                            <div class="row row-cols-1 text-center">
+                                <h6 class="mb-0">Jane Dow</h6>
+                                <p class="muted-text">Dec 02.2015</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- todo: Review card-2  -->
+                    <div class="review-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                                ex quos voluptate similique consequuntur aperiam voluptas et
+                                reprehenderit, nihil vero? Necessitatibus quisquam
+                                perspiciatis aliquid quia! Fugiat totam necessitatibus aperiam
+                                modi?
+                            </p>
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-center">
+                            <div class="avatar" style="
+                    background: url('https://source.unsplash.com/7YVZYZeITc8')
+                      top/cover no-repeat;
+                  "></div>
+                            <div class="row row-cols-1 text-center">
+                                <h6 class="mb-0">Jane Dow</h6>
+                                <p class="muted-text">Dec 02.2015</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- todo: unloaded card  -->
+                    <div class="review-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                                ex quos voluptate similique consequuntur aperiam voluptas et
+                                reprehenderit, nihil vero? Necessitatibus quisquam
+                                perspiciatis aliquid quia! Fugiat totam necessitatibus aperiam
+                                modi?
+                            </p>
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-center">
+                            <div class="avatar">
+                                <span class="spinner-border spinner-border-sm w-100 h-100" role="status"
+                                    aria-hidden="true"></span>
+                            </div>
+                            <div class="row row-cols-1 text-center">
+                                <h6 class="mb-0">loading...</h6>
+                                <p class="muted-text">loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!--TODO: MAIN > SEC. COLLABORATE -->
+        <section id="Collaborate" class="my-5">
+            <div class="container">
+                <h4 class="display-4 fw-bold text-purple-dark my-5 pb-2">
+                    Collaborate with us
+                </h4>
+                <h6 class="display-6 text-purple-dark mb-3">
+                    Teach / Affiliate / Coupons / Design
+                </h6>
+                <p class="fs-4 mb-5">
+                    With more then 3 Mil students around the world thi is the strongest
+                    course platform !
+                </p>
+            </div>
+
+            <!-- todo: Become a instructor -->
+            <div class="container">
+                <row class="row mb-5">
+                    <div class="col-md-6 col-12 mx-sm-0 mx-auto">
+                        <div class="card" style="max-width: 30rem">
+                            <img src="https://source.unsplash.com/GqHeaHja5m0
+              " alt="" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mx-sm-0 mx-auto">
+                        <div class="card-body text-sm-start text-center">
+                            <h3 class="card-title display-2 fw-bold text-purple-dark">
+                                Become an instructor
+                            </h3>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in to additional
+                                content. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Voluptate quasi quis ipsa voluptatum soluta debitis
+                                distinctio, quas animi qui minus. Quisquam earum aliquid a
+                                excepturi mollitia fugiat similique fugit iste?
+                            </p>
+                            <a href="#" class="btn btn-purple w-100">Become an instructor</a>
+                        </div>
+                    </div>
+                </row>
+            </div>
+            <!-- todo: Section break -->
+            <section class="bg-light text-purple-dark">
+                <div class="container d-flex justify-content-center display-4 my-5 py-5">
+                    <div class="d-flex w-100 justify-content-between">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- todo: Become a affiliate -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 mx-sm-0 mx-auto">
+                        <div class="card" style="max-width: 30rem">
+                            <img src="https://source.unsplash.com/6mlAfBZFKmM" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 card border-0 my-auto">
+                        <div class="card-body text-sm-start text-center">
+                            <h3 class="card-title display-2 fw-bold text-purple-dark">
+                                Become an affiliate
+                            </h3>
+                            <p class="card-text">
+                                Our affiliate program supporting text below as a natural
+                                lead-in to additional content. Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Quibusdam praesentium libero
+                                itaque veniam sint tenetur.
+                            </p>
+                            <a href="#" class="btn btn-purple w-100">Become an affiliate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!-- <script src="./node_modules/bootstrap/dist/js//bootstrap.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+    <!-- tooltip -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+
+</body>
+
+
+</html>

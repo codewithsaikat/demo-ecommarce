@@ -1,0 +1,116 @@
+// Text
+.text {
+
+    &-purple-dark {
+        color: $purple-dark;
+    }
+
+    &-carrot-red {
+        color: $carrot-red;
+    }
+
+    &-review-color {
+        color: $review-cold;
+    }
+
+    &-html {
+        color: $html-color;
+    }
+
+    &-css {
+        color: $css-color;
+    }
+
+    &-js {
+        color: $js-color;
+    }
+
+    &-sass {
+        color: $sass-color;
+    }
+
+    &-bs {
+        color: $bs-color;
+    }
+
+    &-angular {
+        color: $angular-color;
+    }
+
+    &-vue {
+        color: $vue-color;
+    }
+
+    &-react {
+        color: $react-color;
+    }
+
+    &-npm {
+        color: $npm-color;
+    }
+
+    &-db {
+        color: $mongoDB-color;
+    }
+
+    &-node {
+        color: $nodeJS-color;
+    }
+
+
+}
+
+
+// Background
+
+.bg {
+    &-purple-dark {
+        background-color: $purple-dark;
+    }
+
+    &-purple-dark-20 {
+        background-color: #010c20;
+    }
+
+    &-carrot-red {
+        background-color: $carrot-red;
+    }
+
+    &-dark-transparent {
+        background-color: $dark-transparent;
+    }
+
+}
+
+.hover {
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    color: lighten($color: #fff, $amount: 50%) !important;
+
+    &-link:hover {
+        @extend .hover;
+        text-decoration: underline !important;
+
+    }
+}
+
+// Animation
+
+@keyframes animateFadeInLeft {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(initial);
+        opacity: 1;
+    }
+}
+
+.fade-in-left {
+    animation: animateFadeInLeft 2s ease;
+}

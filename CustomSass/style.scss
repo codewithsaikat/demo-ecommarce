@@ -1,0 +1,24 @@
+// Bootstrap 5 partials
+
+@import ".././node_modules/bootstrap/scss/bootstrap.scss";
+
+
+/* Custom Style*/
+
+
+@import "../CustomSass/_config.scss";
+
+@import "../CustomSass/_variables.scss";
+
+@import "../CustomSass/utilities.scss";
+
+@import "../CustomSass/_mixin.scss";
+
+
+
+// sections
+
+@import "../CustomSass/sections/categories_section.scss";
+@import "../CustomSass/sections/product_section.scss";
+@import "../CustomSass/sections/review_section.scss"
+
